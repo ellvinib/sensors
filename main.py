@@ -5,13 +5,11 @@ from sensors.SoilTemperatureSensor import SoilTemperatureSensor
 from sensors.GroundMoistureSensor import GroundMoistureSensor
 from sensors.TemperatureOutsideSensor import TemperatureOutsideSensor
 
-import time
-
-
+import sys, time
 
 # define connection to the sensor of our thingsboard
 
-thingsBoard = ThingsBoard('193.191.187.65', 'Sensors1')
+thingsBoard = ThingsBoard(sys.argv[0], sys.argv[1])
 
 # Sensors we want to use in the things board
 
