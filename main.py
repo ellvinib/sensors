@@ -9,7 +9,7 @@ import sys, time
 
 # define connection to the sensor of our thingsboard
 
-thingsBoard = ThingsBoard(sys.argv[0], sys.argv[1])
+thingsBoard = ThingsBoard(sys.argv[1], sys.argv[2])
 
 # Sensors we want to use in the things board
 
